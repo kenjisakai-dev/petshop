@@ -1,1 +1,57 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  /* Colors */
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9282fa;
+  --background-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  --ff-base: "Inter", sans-serif;
+  --ff-tight: "Inter Tight", sans-serif;
+
+  --fw-bold: 700;
+  --fw-medium: 600;
+  --fw-small: 500;
+  --fw-regular: 400;
+
+  --fs-title: 1.5rem;
+  --fs-pg-md: 0.875rem;
+  --fs-pg-sm: 0.75rem;
+  --fs-label-lg: 1rem;
+  --fs-label-md: 0.875rem;
+  --fs-label-sm: 0.75rem;
+  --fs-link: 0.75rem;
+
+  --font-title: var(--fw-bold) var(--fs-title) / 133% var(--ff-tight);
+  --font-pg-md: var(--fw-medium) var(--fs-pg-md) / 171% var(--ff-base);
+  --fs-pg-sm: var(--fw-medium) var(--fs-pg-sm) / 133% var(--ff-base);
+  --fs-label-lg: var(--fw-bold) var(--fs-label-lg) / 150% var(--ff-base);
+  --fs-label-md: var(--fw-bold) var(--fs-label-md) / 171% var(--ff-base);
+  --fs-label-sm: var(--fw-bold) var(--fs-label-sm) / 133% var(--ff-base);
+  --fs-link: var(--fw-medium) var(--fs-link) / 133% var(--ff-base);
+}
