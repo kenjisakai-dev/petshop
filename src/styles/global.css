@@ -31,6 +31,7 @@
   --accent-orange: #f09102;
   --accent-orange-light: #75501b;
 
+  /* Fonts */
   --ff-base: "Inter", sans-serif;
   --ff-tight: "Inter Tight", sans-serif;
 
@@ -46,12 +47,31 @@
   --fs-label-md: 0.875rem;
   --fs-label-sm: 0.75rem;
   --fs-link: 0.75rem;
+  --fs-input: 1rem;
 
   --font-title: var(--fw-bold) var(--fs-title) / 133% var(--ff-tight);
-  --font-pg-md: var(--fw-medium) var(--fs-pg-md) / 171% var(--ff-base);
-  --fs-pg-sm: var(--fw-medium) var(--fs-pg-sm) / 133% var(--ff-base);
-  --fs-label-lg: var(--fw-bold) var(--fs-label-lg) / 150% var(--ff-base);
-  --fs-label-md: var(--fw-bold) var(--fs-label-md) / 171% var(--ff-base);
-  --fs-label-sm: var(--fw-bold) var(--fs-label-sm) / 133% var(--ff-base);
-  --fs-link: var(--fw-medium) var(--fs-link) / 133% var(--ff-base);
+  --font-pg-md: var(--fw-small) var(--fs-pg-md) / 171% var(--ff-base);
+  --font-pg-sm: var(--fw-medium) var(--fs-pg-sm) / 133% var(--ff-base);
+  --font-label-lg: var(--fw-bold) var(--fs-label-lg) / 150% var(--ff-base);
+  --font-label-md: var(--fw-bold) var(--fs-label-md) / 171% var(--ff-base);
+  --font-label-sm: var(--fw-bold) var(--fs-label-sm) / 133% var(--ff-base);
+  --font-link: var(--fw-medium) var(--fs-link) / 133% var(--ff-base);
+  --font-input: var(--fw-regular) var(--fs-input) / 150% var(--ff-base);
+
+  /* Paddings */
+  --py: 3.875rem;
+}
+
+body {
+  background-color: var(--background-tertiary);
+}
+
+h1 {
+  font: var(--font-title);
+  color: var(--content-primary);
+}
+
+.txt-pg-md {
+  font: var(--font-pg-md);
+  color: var(--content-secondary);
 }

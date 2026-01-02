@@ -1,0 +1,54 @@
+.container {
+}
+
+.page {
+  max-width: 54rem;
+  margin-inline: auto;
+  padding-block: var(--py);
+}
+
+.header-schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-schedule header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-schedule .date-wrapper {
+  position: relative;
+  margin-block: 0.375rem;
+}
+
+.header-schedule .date-wrapper input#date {
+  padding-block: 0.75rem;
+  padding-inline: 2.5rem 0.75rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 0.5rem;
+  outline: none;
+
+  font: var(--font-input);
+  color: var(--content-secondary);
+  background-color: var(--background-tertiary);
+
+  &::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background: url("../assets/arrow-down.svg");
+  }
+}
+
+.header-schedule .date-wrapper .icon-calender {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../assets/calender.svg");
+}
