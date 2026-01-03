@@ -60,10 +60,17 @@
 
   /* Paddings */
   --py: 3.875rem;
+  --px: 5rem;
 }
 
 body {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-secondary);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {
@@ -71,7 +78,62 @@ h1 {
   color: var(--content-primary);
 }
 
-.txt-pg-md {
+.txt-header-description {
   font: var(--font-pg-md);
   color: var(--content-secondary);
+}
+
+.txt-period {
+  font: var(--font-label-lg);
+  font-family: var(--ff-tight);
+  color: var(--content-primary);
+}
+
+.txt-hour {
+  font: var(--font-label-lg);
+  font-family: var(--ff-tight);
+  color: var(--content-secondary);
+}
+
+.txt-hour-schedule {
+  font: var(--font-label-sm);
+  font-weight: var(--fw-medium);
+  color: var(--content-primary);
+}
+
+.txt-animal {
+  font: var(--font-label-sm);
+  font-weight: var(--fw-medium);
+  color: var(--content-primary);
+
+  display: flex;
+  gap: 0.25rem;
+
+  width: 12.187rem;
+}
+
+.txt-responsible {
+  font: var(--font-pg-sm);
+  font-weight: var(--fw-regular);
+  color: var(--content-secondary);
+}
+
+.txt-responsible {
+  font: var(--font-pg-sm);
+  font-weight: var(--fw-regular);
+  color: var(--content-secondary);
+}
+
+.txt-description {
+  font: var(--font-pg-sm);
+  font-weight: var(--fw-regular);
+  color: var(--content-secondary);
+
+  width: 13.75rem;
+}
+
+.txt-remove {
+  font: var(--font-pg-sm);
+  font-weight: var(--fw-regular);
+  color: var(--content-tertiary);
 }
