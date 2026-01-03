@@ -34,6 +34,7 @@
   /* Fonts */
   --ff-base: "Inter", sans-serif;
   --ff-tight: "Inter Tight", sans-serif;
+  --ff-logo: "Familjen Grotesk", sans-serif;
 
   --fw-bold: 700;
   --fw-medium: 600;
@@ -48,6 +49,7 @@
   --fs-label-sm: 0.75rem;
   --fs-link: 0.75rem;
   --fs-input: 1rem;
+  --fs-logo: 1rem;
 
   --font-title: var(--fw-bold) var(--fs-title) / 133% var(--ff-tight);
   --font-pg-md: var(--fw-small) var(--fs-pg-md) / 171% var(--ff-base);
@@ -57,6 +59,7 @@
   --font-label-sm: var(--fw-bold) var(--fs-label-sm) / 133% var(--ff-base);
   --font-link: var(--fw-medium) var(--fs-link) / 133% var(--ff-base);
   --font-input: var(--fw-regular) var(--fs-input) / 150% var(--ff-base);
+  --font-logo: var(--fw-bold) var(--fs-input) / 150% var(--ff-logo);
 
   /* Paddings */
   --py: 3.875rem;
@@ -71,6 +74,11 @@ body {
 
 ul {
   list-style: none;
+}
+
+.logo {
+  font: var(--font-logo);
+  color: #9282fa;
 }
 
 h1 {
