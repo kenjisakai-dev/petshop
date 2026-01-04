@@ -1,5 +1,6 @@
 .logo {
   position: fixed;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -72,11 +73,18 @@
 
       & li {
         display: flex;
+        align-items: center;
         gap: 1rem;
 
         padding-block: 1rem;
         padding-inline: 0.75rem;
         border-bottom: 1px solid var(--border-divisor);
+
+        & .schedule-info {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
 
         & .txt-animal-tutor {
           display: flex;
@@ -97,8 +105,76 @@
   }
 }
 
-.btn#new-schedule {
+.button-wrapper {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header-schedule {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & .input-wrapper {
+      margin-block: 0.75rem 0rem;
+    }
+  }
+
+  .schedule .schedule-period ul.list-schedule {
+    gap: 0rem;
+
+    & li {
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: 0.75rem;
+      gap: 0rem;
+
+      & .schedule-info {
+        gap: 0.75rem;
+
+        & .txt-animal-tutor {
+          width: 100%;
+
+          & .font-label-sm {
+            font: var(--font-label-md);
+          }
+
+          & .font-pg-sm {
+            font: var(--font-pg-md);
+          }
+        }
+      }
+
+      & .font-pg-sm-description-service {
+        width: 100%;
+
+        font: var(--font-pg-md);
+      }
+
+      & .font-pg-sm-remove {
+        margin-left: auto;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .logo {
+    position: absolute;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    padding-block: 1.125rem;
+    width: 100%;
+    background-color: var(--background-tertiary);
+    bottom: 0;
+    left: 0;
+  }
 }

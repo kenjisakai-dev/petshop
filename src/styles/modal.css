@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  width: 30rem;
+  max-width: 30rem;
   padding-block: var(--py-modal-schedule);
   padding-inline: var(--px-modal-schedule);
 
@@ -14,9 +14,6 @@
 
 .modal-schedule header {
   margin-bottom: 1.75rem;
-}
-
-.page {
 }
 
 .field-wrapper {
@@ -46,4 +43,18 @@
   width: fit-content;
   margin-left: auto;
   margin-top: 0.75rem;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .field-wrapper-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1279px) {
+  .modal-schedule {
+    width: calc(100% - (1.25rem * 2));
+    top: 4.75rem;
+  }
 }

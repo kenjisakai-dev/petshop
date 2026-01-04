@@ -46,10 +46,12 @@
 
             <ul role="list" class="list-schedule list-schedule-morning">
               <li>
-                <span class="font-label-sm">09:00</span>
-                <div class="txt-animal-tutor">
-                  <span class="font-label-sm">Thor</span>
-                  <span class="font-pg-sm">/ Fernanda Costa</span>
+                <div class="schedule-info">
+                  <span class="font-label-md">09:00</span>
+                  <div class="txt-animal-tutor">
+                    <span class="font-label-sm">Thor</span>
+                    <span class="font-pg-sm">/ Fernanda Costa</span>
+                  </div>
                 </div>
                 <span class="font-pg-sm-description-service">Vacinação</span>
                 <span class="font-pg-sm-remove">Remover agendamento</span>
@@ -66,11 +68,14 @@
 
             <ul role="list" class="list-schedule list-schedule-afternoon">
               <li>
-                <span class="font-label-sm">13:00</span>
-                <div class="txt-animal-tutor">
-                  <span class="font-label-sm">Mel</span>
-                  <span class="font-pg-sm">/ João Souza</span>
+                <div class="schedule-info">
+                  <span class="font-label-md">13:00</span>
+                  <div class="txt-animal-tutor">
+                    <span class="font-label-sm">Mel</span>
+                    <span class="font-pg-sm">/ João Souza</span>
+                  </div>
                 </div>
+
                 <span class="font-pg-sm-description-service">
                   Corte de Unhas
                 </span>
@@ -78,11 +83,14 @@
               </li>
 
               <li>
-                <span class="font-label-sm">14:00</span>
-                <div class="txt-animal-tutor">
-                  <span class="font-label-sm">Bella</span>
-                  <span class="font-pg-sm">/ Pedro Martins</span>
+                <div class="schedule-info">
+                  <span class="font-label-md">14:00</span>
+                  <div class="txt-animal-tutor">
+                    <span class="font-label-sm">Bella</span>
+                    <span class="font-pg-sm">/ Pedro Martins</span>
+                  </div>
                 </div>
+
                 <span class="font-pg-sm-description-service">
                   Aplicação de Anti-pulgas
                 </span>
@@ -90,10 +98,12 @@
               </li>
 
               <li>
-                <span class="font-label-sm">15:00</span>
-                <div class="txt-animal-tutor">
-                  <span class="font-label-sm">Simba</span>
-                  <span class="font-pg-sm">/ Juliana Rocha</span>
+                <div class="schedule-info">
+                  <span class="font-label-md">15:00</span>
+                  <div class="txt-animal-tutor">
+                    <span class="font-label-sm">Simba</span>
+                    <span class="font-pg-sm">/ Juliana Rocha</span>
+                  </div>
                 </div>
                 <span class="font-pg-sm-description-service">
                   Tosa Higiênica
@@ -112,10 +122,12 @@
 
             <ul role="list" class="list-schedule list-schedule-night">
               <li>
-                <span class="font-label-sm">20:00</span>
-                <div class="txt-animal-tutor">
-                  <span class="font-label-sm">Max</span>
-                  <span class="font-pg-sm">/ Camila Santos</span>
+                <div class="schedule-info">
+                  <span class="font-label-md">20:00</span>
+                  <div class="txt-animal-tutor">
+                    <span class="font-label-sm">Max</span>
+                    <span class="font-pg-sm">/ Camila Santos</span>
+                  </div>
                 </div>
                 <span class="font-pg-sm-description-service">
                   Limpeza de Dentes
@@ -127,11 +139,13 @@
         </div>
       </div>
 
-      <button type="button" id="new-schedule" class="btn font-label-lg-btn">
-        NOVO AGENDAMENTO
-      </button>
+      <div class="button-wrapper">
+        <button type="button" id="new-schedule" class="btn font-label-lg-btn">
+          NOVO AGENDAMENTO
+        </button>
+      </div>
 
-      <div class="modal-schedule hidden">
+      <div class="modal-schedule">
         <header>
           <h1>Agende um atendimento</h1>
           <p class="font-pg-md">
@@ -158,7 +172,7 @@
           </div>
 
           <div class="field-wrapper">
-            <label for="name-animal" class="font-label-md"> Nome do pet </label>
+            <label for="name-animal" class="font-label-md">Nome do pet</label>
 
             <div class="input-wrapper">
               <span class="icon-animal"></span>
@@ -192,16 +206,14 @@
               Descrição do serviço
             </label>
 
-            <div class="textarea-wrapper">
-              <textarea
-                name="descriptionService"
-                id="description-service"
-                rows="2"
-                maxlength="60"
-                placeholder="Banho e tosa"
-                required
-              ></textarea>
-            </div>
+            <textarea
+              name="descriptionService"
+              id="description-service"
+              rows="2"
+              maxlength="60"
+              placeholder="Banho e tosa"
+              required
+            ></textarea>
           </div>
 
           <div class="field-wrapper-row">
