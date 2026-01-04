@@ -1,0 +1,49 @@
+.modal-schedule {
+  position: absolute;
+  top: 1.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 30rem;
+  padding-block: var(--py-modal-schedule);
+  padding-inline: var(--px-modal-schedule);
+
+  background-color: var(--background-tertiary);
+  border-radius: 0.75rem;
+}
+
+.modal-schedule header {
+  margin-bottom: 1.75rem;
+}
+
+.page {
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-wrapper {
+  position: relative;
+
+  &:last-child {
+    margin: none;
+  }
+}
+
+.field-wrapper-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.field-wrapper-row .field-wrapper {
+  flex: 1;
+}
+
+.btn#schedule {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 0.75rem;
+}

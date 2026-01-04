@@ -1,0 +1,54 @@
+.logo {
+  font: var(--font-logo);
+  color: var(--content-brand);
+}
+
+h1 {
+  font: var(--font-title);
+  color: var(--content-primary);
+}
+
+.font-pg-md {
+  font: var(--font-pg-md);
+  color: var(--content-secondary);
+}
+
+.font-label-lg-period {
+  font: var(--font-label-lg);
+  color: var(--content-primary);
+}
+
+.font-label-lg-hour {
+  font: var(--font-label-lg);
+  color: var(--content-secondary);
+}
+
+.font-label-lg-btn {
+  font: var(--font-label-lg);
+  color: var(--button-primary);
+}
+
+.font-label-sm {
+  font: var(--font-label-sm);
+  color: var(--content-primary);
+}
+
+.font-pg-sm {
+  font: var(--font-pg-sm);
+  color: var(--content-secondary);
+}
+
+.font-pg-sm-description-service {
+  font: var(--font-pg-sm);
+  color: var(--content-secondary);
+}
+
+.font-label-md {
+  font: var(--font-label-md);
+  color: var(--content-primary);
+}
+
+.font-pg-sm-remove {
+  font: var(--font-pg-sm);
+  color: var(--content-tertiary);
+}
