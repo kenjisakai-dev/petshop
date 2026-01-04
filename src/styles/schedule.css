@@ -57,7 +57,7 @@
 
       padding-block: 0.75rem;
       padding-inline: 1.25rem;
-      border-bottom: 1px solid var(--border-quaternary);
+      border-bottom: 0.6px solid var(--border-divisor);
 
       & span:nth-child(2) {
         margin-right: auto;
@@ -78,7 +78,7 @@
 
         padding-block: 1rem;
         padding-inline: 0.75rem;
-        border-bottom: 1px solid var(--border-divisor);
+        border-bottom: 0.6px solid var(--border-divisor);
 
         & .schedule-info {
           display: flex;
@@ -93,8 +93,19 @@
           width: 12.187rem;
         }
 
-        & .font-pg-sm-description-service {
+        & .text-describe-service {
           width: 13.75rem;
+        }
+
+        & .text-remove {
+          transition: color 200ms;
+
+          &:hover {
+            font: var(--font-link);
+            color: var(--content-primary);
+            cursor: pointer;
+            text-decoration: underline;
+          }
         }
 
         &:last-child {
@@ -136,24 +147,14 @@
 
         & .txt-animal-tutor {
           width: 100%;
-
-          & .font-label-sm {
-            font: var(--font-label-md);
-          }
-
-          & .font-pg-sm {
-            font: var(--font-pg-md);
-          }
         }
       }
 
-      & .font-pg-sm-description-service {
+      & .text-describe-service {
         width: 100%;
-
-        font: var(--font-pg-md);
       }
 
-      & .font-pg-sm-remove {
+      & .text-remove {
         margin-left: auto;
         margin-top: 0.5rem;
       }

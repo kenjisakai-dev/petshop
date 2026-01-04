@@ -24,7 +24,7 @@
         <div class="header-schedule">
           <header>
             <h1>Sua agenda</h1>
-            <p class="font-pg-md">
+            <p class="text-header-describe">
               Aqui você pode ver todos os clientes e serviços agendados para
               hoje.
             </p>
@@ -40,21 +40,21 @@
           <div class="schedule-period schedule-morning">
             <header>
               <img src="./src/assets/sum.svg" alt="ícone do sol" />
-              <span class="font-label-lg-period">Manhã</span>
-              <span class="font-label-lg-hour">09h-12h</span>
+              <span class="text-header-period">Manhã</span>
+              <span class="text-header-hour">09h-12h</span>
             </header>
 
             <ul role="list" class="list-schedule list-schedule-morning">
               <li>
                 <div class="schedule-info">
-                  <span class="font-label-md">09:00</span>
+                  <span class="text-hour">09:00</span>
                   <div class="txt-animal-tutor">
-                    <span class="font-label-sm">Thor</span>
-                    <span class="font-pg-sm">/ Fernanda Costa</span>
+                    <span class="text-animal">Thor</span>
+                    <span class="text-tutor">/ Fernanda Costa</span>
                   </div>
                 </div>
-                <span class="font-pg-sm-description-service">Vacinação</span>
-                <span class="font-pg-sm-remove">Remover agendamento</span>
+                <span class="text-describe-service">Vacinação</span>
+                <span class="text-remove">Remover agendamento</span>
               </li>
             </ul>
           </div>
@@ -62,53 +62,49 @@
           <div class="schedule-period schedule-afternoon">
             <header>
               <img src="./src/assets/cloud.svg" alt="ícone da nuvem" />
-              <span class="font-label-lg-period">Tarde</span>
-              <span class="font-label-lg-hour">13h-18h</span>
+              <span class="text-header-period">Tarde</span>
+              <span class="text-header-hour">13h-18h</span>
             </header>
 
             <ul role="list" class="list-schedule list-schedule-afternoon">
               <li>
                 <div class="schedule-info">
-                  <span class="font-label-md">13:00</span>
+                  <span class="text-hour">13:00</span>
                   <div class="txt-animal-tutor">
-                    <span class="font-label-sm">Mel</span>
-                    <span class="font-pg-sm">/ João Souza</span>
+                    <span class="text-animal">Mel</span>
+                    <span class="text-tutor">/ João Souza</span>
                   </div>
                 </div>
 
-                <span class="font-pg-sm-description-service">
-                  Corte de Unhas
-                </span>
-                <span class="font-pg-sm-remove">Remover agendamento</span>
+                <span class="text-describe-service">Corte de Unhas</span>
+                <span class="text-remove">Remover agendamento</span>
               </li>
 
               <li>
                 <div class="schedule-info">
-                  <span class="font-label-md">14:00</span>
+                  <span class="text-hour">14:00</span>
                   <div class="txt-animal-tutor">
-                    <span class="font-label-sm">Bella</span>
-                    <span class="font-pg-sm">/ Pedro Martins</span>
+                    <span class="text-animal">Bella</span>
+                    <span class="text-tutor">/ Pedro Martins</span>
                   </div>
                 </div>
 
-                <span class="font-pg-sm-description-service">
+                <span class="text-describe-service">
                   Aplicação de Anti-pulgas
                 </span>
-                <span class="font-pg-sm-remove">Remover agendamento</span>
+                <span class="text-remove">Remover agendamento</span>
               </li>
 
               <li>
                 <div class="schedule-info">
-                  <span class="font-label-md">15:00</span>
+                  <span class="text-hour">15:00</span>
                   <div class="txt-animal-tutor">
-                    <span class="font-label-sm">Simba</span>
-                    <span class="font-pg-sm">/ Juliana Rocha</span>
+                    <span class="text-animal">Simba</span>
+                    <span class="text-tutor">/ Juliana Rocha</span>
                   </div>
                 </div>
-                <span class="font-pg-sm-description-service">
-                  Tosa Higiênica
-                </span>
-                <span class="font-pg-sm-remove">Remover agendamento</span>
+                <span class="text-describe-service">Tosa Higiênica</span>
+                <span class="text-remove">Remover agendamento</span>
               </li>
             </ul>
           </div>
@@ -116,23 +112,21 @@
           <div class="schedule-period schedule-night">
             <header>
               <img src="./src/assets/moon.svg" alt="ícone da lua" />
-              <span class="font-label-lg-period">Noite</span>
-              <span class="font-label-lg-hour">19h-21h</span>
+              <span class="text-header-period">Noite</span>
+              <span class="text-header-hour">19h-21h</span>
             </header>
 
             <ul role="list" class="list-schedule list-schedule-night">
               <li>
                 <div class="schedule-info">
-                  <span class="font-label-md">20:00</span>
+                  <span class="text-hour">20:00</span>
                   <div class="txt-animal-tutor">
-                    <span class="font-label-sm">Max</span>
-                    <span class="font-pg-sm">/ Camila Santos</span>
+                    <span class="text-animal">Max</span>
+                    <span class="text-tutor">/ Camila Santos</span>
                   </div>
                 </div>
-                <span class="font-pg-sm-description-service">
-                  Limpeza de Dentes
-                </span>
-                <span class="font-pg-sm-remove">Remover agendamento</span>
+                <span class="text-describe-service">Limpeza de Dentes</span>
+                <span class="text-remove">Remover agendamento</span>
               </li>
             </ul>
           </div>
@@ -140,22 +134,20 @@
       </div>
 
       <div class="button-wrapper">
-        <button type="button" id="new-schedule" class="btn font-label-lg-btn">
-          NOVO AGENDAMENTO
-        </button>
+        <button type="button" id="new-schedule">NOVO AGENDAMENTO</button>
       </div>
 
-      <div class="modal-schedule">
+      <div class="modal-schedule hidden">
         <header>
           <h1>Agende um atendimento</h1>
-          <p class="font-pg-md">
+          <p class="text-header-describe">
             Preencha os dados do cliente para realizar o agendamento:
           </p>
         </header>
 
         <form>
           <div class="field-wrapper">
-            <label for="name-tutor" class="font-label-md">
+            <label for="name-tutor" class="text-label-input">
               Nome do tutor
             </label>
 
@@ -172,7 +164,9 @@
           </div>
 
           <div class="field-wrapper">
-            <label for="name-animal" class="font-label-md">Nome do pet</label>
+            <label for="name-animal" class="text-label-input">
+              Nome do pet
+            </label>
 
             <div class="input-wrapper">
               <span class="icon-animal"></span>
@@ -187,7 +181,7 @@
           </div>
 
           <div class="field-wrapper">
-            <label for="phone" class="font-label-md">Telefone</label>
+            <label for="phone" class="text-label-input">Telefone</label>
 
             <div class="input-wrapper">
               <span class="icon-phone"></span>
@@ -202,7 +196,7 @@
           </div>
 
           <div class="field-wrapper">
-            <label for="description-service" class="font-label-md">
+            <label for="description-service" class="text-label-input">
               Descrição do serviço
             </label>
 
@@ -218,7 +212,7 @@
 
           <div class="field-wrapper-row">
             <div class="field-wrapper">
-              <label for="date-schedule" class="font-label-md">Data</label>
+              <label for="date-schedule" class="text-label-input">Data</label>
 
               <div class="input-wrapper">
                 <span class="icon-calendar"></span>
@@ -232,7 +226,7 @@
             </div>
 
             <div class="field-wrapper">
-              <label for="hour-schedule" class="font-label-md">Hora</label>
+              <label for="hour-schedule" class="text-label-input">Hora</label>
 
               <div class="input-wrapper">
                 <span class="icon-hour"></span>
@@ -246,9 +240,7 @@
             </div>
           </div>
 
-          <button type="submit" id="schedule" class="btn font-label-lg-btn">
-            AGENDAR
-          </button>
+          <button type="submit" id="schedule">AGENDAR</button>
         </form>
       </div>
     </div>

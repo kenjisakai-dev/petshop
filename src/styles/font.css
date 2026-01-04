@@ -8,47 +8,66 @@ h1 {
   color: var(--content-primary);
 }
 
-.font-pg-md {
+.text-header-describe {
   font: var(--font-pg-md);
   color: var(--content-secondary);
 }
 
-.font-label-lg-period {
-  font: var(--font-label-lg);
-  color: var(--content-primary);
-}
-
-.font-label-lg-hour {
-  font: var(--font-label-lg);
-  color: var(--content-secondary);
-}
-
-.font-label-lg-btn {
-  font: var(--font-label-lg);
-  color: var(--button-primary);
-}
-
-.font-label-sm {
-  font: var(--font-label-sm);
-  color: var(--content-primary);
-}
-
-.font-pg-sm {
-  font: var(--font-pg-sm);
-  color: var(--content-secondary);
-}
-
-.font-pg-sm-description-service {
-  font: var(--font-pg-sm);
-  color: var(--content-secondary);
-}
-
-.font-label-md {
+.text-label-input {
   font: var(--font-label-md);
   color: var(--content-primary);
 }
 
-.font-pg-sm-remove {
+.text-header-period {
+  font: var(--font-label-lg);
+  color: var(--content-primary);
+}
+
+.text-header-hour {
+  font: var(--font-label-lg);
+  color: var(--content-secondary);
+}
+
+.text-hour {
+  font: var(--font-label-sm);
+  color: var(--content-primary);
+}
+
+.text-animal {
+  font: var(--font-label-sm);
+  color: var(--content-primary);
+}
+
+.text-tutor {
+  font: var(--font-pg-sm);
+  color: var(--content-secondary);
+}
+
+.text-describe-service {
+  font: var(--font-pg-sm);
+  color: var(--content-secondary);
+}
+
+.text-remove {
   font: var(--font-pg-sm);
   color: var(--content-tertiary);
+}
+
+@media (max-width: 768px) {
+  .text-hour {
+    font: var(--font-label-md);
+    color: var(--content-primary);
+  }
+
+  .text-animal {
+    font: var(--font-label-md);
+  }
+
+  .text-tutor {
+    font: var(--font-pg-md);
+  }
+
+  .text-describe-service {
+    font: var(--font-pg-md);
+  }
 }

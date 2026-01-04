@@ -12,6 +12,7 @@
   --content-secondary: #98959d;
   --content-tertiary: #666666;
   --content-brand: #9282fa;
+  --content-brand-shadow: rgba(146, 130, 250, 0.3);
 
   --background-primary: #151515;
   --background-secondary: #1e1e1e;
@@ -22,7 +23,6 @@
 
   --border-primary: #3e3c41;
   --border-secondary: #86818c;
-  --border-quaternary: #2e2c30;
   --border-brand: #9282fa;
   --border-divisor: #353339;
 
@@ -61,7 +61,7 @@
   --font-label-lg: var(--fw-bold) var(--fs-label-lg) / 150% var(--ff-tight);
   --font-label-md: var(--fw-bold) var(--fs-label-md) / 171% var(--ff-base);
   --font-label-sm: var(--fw-medium) var(--fs-label-sm) / 133% var(--ff-base);
-  --font-link: var(--fw-medium) var(--fs-link) / 133% var(--ff-base);
+  --font-link: var(--fw-regular) var(--fs-link) / 133% var(--ff-base);
   --font-input: var(--fw-regular) var(--fs-input) / 150% var(--ff-base);
   --font-logo: var(--fw-bold) var(--fs-input) / 150% var(--ff-logo);
 
