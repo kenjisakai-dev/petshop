@@ -49,7 +49,7 @@
   flex: 1;
 }
 
-button.schedule {
+button#button-schedule {
   width: fit-content;
   margin-left: auto;
   margin-top: 0.75rem;

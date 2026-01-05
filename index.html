@@ -133,13 +133,13 @@
         </div>
       </div>
 
-      <div class="button-wrapper hidden">
-        <button type="button" ">NOVO AGENDAMENTO</button>
+      <div class="button-wrapper">
+        <button type="button" id="new-schedule">NOVO AGENDAMENTO</button>
       </div>
 
-      <div class="modal-schedule">
-        <img src="./src/assets/close.svg" alt="ícone de fechar">
-        
+      <div class="modal-schedule hidden">
+        <img src="./src/assets/close.svg" alt="ícone de fechar" />
+
         <header>
           <h1>Agende um atendimento</h1>
           <p class="text-header-describe">
@@ -218,6 +218,7 @@
 
               <div class="input-wrapper">
                 <span class="icon-calendar"></span>
+
                 <input
                   type="date"
                   id="date-schedule"
@@ -232,21 +233,24 @@
 
               <div class="input-wrapper">
                 <span class="icon-hour"></span>
-                <input
-                  type="time"
+                <span class="icon-arrow"></span>
+                <select
                   id="hour-schedule"
                   name="hourSchedule"
+                  disabled
                   required
-                />
+                >
+                  <option value="">--:--</option>
+                </select>
               </div>
             </div>
           </div>
 
-          <button type="submit" class="schedule">AGENDAR</button>
+          <button type="submit" id="button-schedule">AGENDAR</button>
         </form>
       </div>
 
-      <div class="overlay"></div>
+      <div class="overlay hidden"></div>
     </div>
   </body>
 </html>
