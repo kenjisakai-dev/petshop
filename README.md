@@ -70,7 +70,7 @@ O Webpack foi utilizado para transformar o projeto em uma aplicação organizada
 ### 📁 Estrutura com Webpack
 
 - `src/` → código fonte
-- `dist/` → arquivos finais gerados
+- `docs/` → arquivos finais gerados
 - Importação de CSS diretamente no JavaScript
 
 ---
