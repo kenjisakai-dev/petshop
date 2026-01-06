@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 
 import { scheduleNew } from "../../services/schedule.js";
+import { scheduleDays } from "../schedules/load.js";
 
 const form = document.querySelector("form");
 const nameTutor = document.getElementById("name-tutor");
@@ -13,6 +14,8 @@ const hourSchedule = document.getElementById("hour-schedule");
 const btnNewSchedule = document.getElementById("new-schedule");
 const modalSchedule = document.querySelector(".modal-schedule");
 const overlay = document.querySelector(".overlay");
+
+const selectedDate = document.getElementById("date");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -29,10 +32,15 @@ form.addEventListener("submit", async (event) => {
 
   await scheduleNew(schedule);
 
+  selectedDate.value = dayjs(dateSchedule.value).format("YYYY-MM-DD");
+  scheduleDays();
+
   form.reset();
   hourSchedule.setAttribute("disabled", "true");
 
   modalSchedule.classList.add("hidden");
   overlay.classList.add("hidden");
   btnNewSchedule.classList.remove("hidden");
+
+  document.body.style.overflowY = "auto";
 });

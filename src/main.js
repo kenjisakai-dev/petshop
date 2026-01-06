@@ -11,8 +11,12 @@ import "./styles/utility.css";
 // JS
 import "./libs/dayjs.js";
 
+import "./modules/page-load.js";
+
+import "./modules/schedules/date-change.js";
+import "./modules/schedules/remove.js";
 import "./modules/schedules/open-modal.js";
 
-import "./modules/form/hour-schedule.js";
 import "./modules/form/date-schedule.js";
+import "./modules/form/hour-schedule.js";
 import "./modules/form/submit.js";

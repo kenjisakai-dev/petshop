@@ -35,13 +35,25 @@ export async function scheduleFetchByDay({ date }) {
     const res = await fetch(`${apiConfig.baseURL}/schedules`);
     const data = await res.json();
 
-    const dailySchedules = data.filter((schedule) =>
-      dayjs(schedule.when).isSame(dayjs(date), "day")
-    );
+    const dailySchedules = data
+      .filter((schedule) => dayjs(schedule.when).isSame(dayjs(date), "day"))
+      .sort((a, b) => dayjs(a.when).hour() - dayjs(b.when).hour());
 
     return dailySchedules;
   } catch (err) {
     console.log(err);
     alert("Não foi possível obter os agendamentos.");
+  }
+}
+
+export async function scheduleCancel({ id }) {
+  console.log(id);
+  try {
+    await fetch(`${apiConfig.baseURL}/schedules/${id}`, {
+      method: "DELETE",
+    });
+  } catch (err) {
+    console.log(err);
+    alert("Não foi possível cancelar o agendamento.");
   }
 }

@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container overflow-style">
       <div class="logo">
         <img src="./src/assets/favicon.svg" alt="logomarca" />
         <span>MUNDO PET</span>
@@ -45,7 +45,7 @@
             </header>
 
             <ul role="list" class="list-schedule list-schedule-morning">
-              <li>
+              <!-- <li>
                 <div class="schedule-info">
                   <span class="text-hour">09:00</span>
                   <div class="txt-animal-tutor">
@@ -55,7 +55,7 @@
                 </div>
                 <span class="text-describe-service">Vacinação</span>
                 <span class="text-remove">Remover agendamento</span>
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -67,7 +67,7 @@
             </header>
 
             <ul role="list" class="list-schedule list-schedule-afternoon">
-              <li>
+              <!-- <li>
                 <div class="schedule-info">
                   <span class="text-hour">13:00</span>
                   <div class="txt-animal-tutor">
@@ -105,7 +105,7 @@
                 </div>
                 <span class="text-describe-service">Tosa Higiênica</span>
                 <span class="text-remove">Remover agendamento</span>
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -117,7 +117,7 @@
             </header>
 
             <ul role="list" class="list-schedule list-schedule-night">
-              <li>
+              <!-- <li>
                 <div class="schedule-info">
                   <span class="text-hour">20:00</span>
                   <div class="txt-animal-tutor">
@@ -127,7 +127,7 @@
                 </div>
                 <span class="text-describe-service">Limpeza de Dentes</span>
                 <span class="text-remove">Remover agendamento</span>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -137,8 +137,12 @@
         <button type="button" id="new-schedule">NOVO AGENDAMENTO</button>
       </div>
 
-      <div class="modal-schedule hidden">
-        <img src="./src/assets/close.svg" alt="ícone de fechar" />
+      <div class="modal-schedule overflow-style hidden">
+        <img
+          src="./src/assets/close.svg"
+          alt="ícone de fechar"
+          class="close-modal"
+        />
 
         <header>
           <h1>Agende um atendimento</h1>
@@ -191,7 +195,7 @@
                 type="text"
                 id="phone"
                 name="phone"
-                placeholder="(00) 0 0000-0000"
+                placeholder="(00) 00000-0000"
                 required
               />
             </div>

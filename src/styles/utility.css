@@ -14,3 +14,23 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6px);
 }
+
+.overflow-style {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-primary);
+    border-radius: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--border-secondary);
+  }
+}

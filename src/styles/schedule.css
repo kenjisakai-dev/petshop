@@ -167,7 +167,7 @@
     position: absolute;
   }
 
-  .button-wrapper:has(.hidden) {
+  .button-wrapper {
     display: flex;
     justify-content: center;
 
