@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
@@ -7,19 +8,28 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "./",
+    clean: true,
   },
-  mode: "development",
+  mode: "production",
 
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "index.html"),
       favicon: path.resolve(__dirname, "src", "assets", "favicon.svg"),
     }),
+    new MiniCssExtractPlugin({
+      filename: "styles.css",
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "src", "assets"),
-          to: path.resolve(__dirname, "dist", "src", "assets"),
+          to: "assets",
+        },
+        {
+          from: path.resolve(__dirname, "src", "assets", "favicon.svg"),
+          to: "favicon.svg",
         },
       ],
     }),
@@ -30,7 +40,7 @@ module.exports = {
       {
         test: /\.css$/i,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.js$/i,
